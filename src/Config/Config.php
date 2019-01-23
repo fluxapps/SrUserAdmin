@@ -23,12 +23,11 @@ class Config extends ActiveRecordConfig {
 	use SrUserAdminTrait;
 	const TABLE_NAME = "ui_uihk_srusr_config";
 	const PLUGIN_CLASS_NAME = ilSrUserAdminPlugin::class;
-	const KEY_ROLE_OBJ_ID = "some";
+	const KEY_ROLE_OBJ_ID = "role_obj_id";
 	/**
 	 * @var array
 	 */
 	protected static $fields = [
 		self::KEY_ROLE_OBJ_ID => self::TYPE_INTEGER
 	];
-	// TODO: Implement Config
 }

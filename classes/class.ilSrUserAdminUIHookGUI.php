@@ -68,7 +68,13 @@ class ilSrUserAdminUIHookGUI extends ilUIHookPluginGUI {
 
 
 			$table_prop = new ilTablePropertiesStorage();
+
 			$table_prop->storeProperty('user7',self::dic()->user()->getId(),'selfields','a:27:{s:9:"firstname";b:1;s:8:"lastname";b:1;s:12:"access_until";b:0;s:10:"last_login";b:0;s:11:"create_date";b:0;s:12:"approve_date";b:0;s:10:"agree_date";b:0;s:5:"email";b:1;s:12:"second_email";b:0;s:5:"title";b:0;s:8:"birthday";b:0;s:6:"gender";b:0;s:9:"org_units";b:0;s:11:"institution";b:0;s:10:"department";b:0;s:6:"street";b:0;s:7:"zipcode";b:0;s:4:"city";b:0;s:7:"country";b:0;s:11:"sel_country";b:0;s:12:"phone_office";b:0;s:10:"phone_home";b:0;s:12:"phone_mobile";b:0;s:3:"fax";b:0;s:13:"matriculation";b:0;s:9:"auth_mode";b:0;s:5:"udf_5";b:0;}');
+
+			$table_prop->showFilter();
+			$table_prop->storeProperty('user7',self::dic()->user()->getId(),'filter',1);
+
+
 		}
 
 
